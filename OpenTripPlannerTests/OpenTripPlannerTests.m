@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in OpenTripPlannerTests");
+    XCTFail(@"Unit tests are not implemented yet in OpenTripPlannerTests");
 }
 
 @end

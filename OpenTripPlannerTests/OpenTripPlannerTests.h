@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 OpenPlans. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface OpenTripPlannerTests : SenTestCase
+@interface OpenTripPlannerTests : XCTestCase
 
 @end

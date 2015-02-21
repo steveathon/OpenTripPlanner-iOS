@@ -119,7 +119,6 @@
 		CCCDFB7215EEAAC600B26133 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCDFB7015EEAAC600B26133 /* InfoPlist.strings */; };
 		CCCDFB7415EEAAC600B26133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCDFB7315EEAAC600B26133 /* main.m */; };
 		CCCDFB7815EEAAC600B26133 /* OTPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCDFB7715EEAAC600B26133 /* OTPAppDelegate.m */; };
-		CCCDFB8015EEAAC600B26133 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCDFB7F15EEAAC600B26133 /* SenTestingKit.framework */; };
 		CCCDFB8115EEAAC600B26133 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCDFB6715EEAAC600B26133 /* UIKit.framework */; };
 		CCCDFB8215EEAAC600B26133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCDFB6915EEAAC600B26133 /* Foundation.framework */; };
 		CCCDFB8A15EEAAC600B26133 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCDFB8815EEAAC600B26133 /* InfoPlist.strings */; };
@@ -493,8 +492,7 @@
 		CCCDFB7515EEAAC600B26133 /* OpenTripPlanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenTripPlanner-Prefix.pch"; sourceTree = "<group>"; };
 		CCCDFB7615EEAAC600B26133 /* OTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTPAppDelegate.h; sourceTree = "<group>"; };
 		CCCDFB7715EEAAC600B26133 /* OTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTPAppDelegate.m; sourceTree = "<group>"; };
-		CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTripPlannerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCCDFB7F15EEAAC600B26133 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTripPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCDFB8715EEAAC600B26133 /* OpenTripPlannerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTripPlannerTests-Info.plist"; sourceTree = "<group>"; };
 		CCCDFB8915EEAAC600B26133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCCDFB8B15EEAAC600B26133 /* OpenTripPlannerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenTripPlannerTests.h; sourceTree = "<group>"; };
@@ -677,7 +675,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCDFB8015EEAAC600B26133 /* SenTestingKit.framework in Frameworks */,
 				CCCDFB8115EEAAC600B26133 /* UIKit.framework in Frameworks */,
 				CCCDFB8215EEAAC600B26133 /* Foundation.framework in Frameworks */,
 			);
@@ -1106,7 +1103,7 @@
 			isa = PBXGroup;
 			children = (
 				CCCDFB6315EEAAC600B26133 /* OTP Mobile.app */,
-				CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.octest */,
+				CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1124,7 +1121,6 @@
 				CCCDFBC415EEBAA200B26133 /* MobileCoreServices.framework */,
 				CCCDFBCA15EEBACE00B26133 /* QuartzCore.framework */,
 				CCCDFBC615EEBAB100B26133 /* Security.framework */,
-				CCCDFB7F15EEAAC600B26133 /* SenTestingKit.framework */,
 				CCCDFBC815EEBABF00B26133 /* SystemConfiguration.framework */,
 				CCCDFB6715EEAAC600B26133 /* UIKit.framework */,
 				CCCDFBE315EEC1BC00B26133 /* libz.dylib */,
@@ -1222,8 +1218,8 @@
 			);
 			name = OpenTripPlannerTests;
 			productName = OpenTripPlannerTests;
-			productReference = CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = CCCDFB7E15EEAAC600B26133 /* OpenTripPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1234,6 +1230,14 @@
 				CLASSPREFIX = OTP;
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = OpenPlans;
+				TargetAttributes = {
+					CCCDFB6215EEAAC600B26133 = {
+						DevelopmentTeam = D6UYV8M9U4;
+					};
+					CCCDFB7D15EEAAC600B26133 = {
+						TestTargetID = CCCDFB6215EEAAC600B26133;
+					};
+				};
 			};
 			buildConfigurationList = CCCDFB5D15EEAAC600B26133 /* Build configuration list for PBXProject "OpenTripPlanner" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1656,7 +1660,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1678,7 +1682,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1690,8 +1694,8 @@
 		CCCDFB9115EEAAC600B26133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Aaron Sutula (A4CW4AA7D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aaron Sutula (A4CW4AA7D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTripPlanner/OpenTripPlanner-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1700,7 +1704,7 @@
 					"\"$(SRCROOT)/OHAttributedLabel\"/**",
 				);
 				INFOPLIST_FILE = "OpenTripPlanner/OpenTripPlanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -1711,8 +1715,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "OTP Mobile";
-				PROVISIONING_PROFILE = "70B10A69-2E7A-4667-8186-09B6FC108163";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "70B10A69-2E7A-4667-8186-09B6FC108163";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1721,8 +1725,8 @@
 		CCCDFB9215EEAAC600B26133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: OpenPlans Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OpenPlans Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTripPlanner/OpenTripPlanner-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1731,7 +1735,7 @@
 					"\"$(SRCROOT)/OHAttributedLabel\"/**",
 				);
 				INFOPLIST_FILE = "OpenTripPlanner/OpenTripPlanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -1742,8 +1746,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "OTP Mobile";
-				PROVISIONING_PROFILE = "C7903C8D-6769-4A24-8CC9-5D3FE5659390";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E773ACC5-2A35-4AC1-A104-445C24ED4438";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1752,34 +1756,34 @@
 		CCCDFB9415EEAAC600B26133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenTripPlanner.app/OpenTripPlanner";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTripPlanner/OpenTripPlanner-Prefix.pch";
 				INFOPLIST_FILE = "OpenTripPlannerTests/OpenTripPlannerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP Mobile.app/OTP Mobile";
 			};
 			name = Debug;
 		};
 		CCCDFB9515EEAAC600B26133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenTripPlanner.app/OpenTripPlanner";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTripPlanner/OpenTripPlanner-Prefix.pch";
 				INFOPLIST_FILE = "OpenTripPlannerTests/OpenTripPlannerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP Mobile.app/OTP Mobile";
 			};
 			name = Release;
 		};
