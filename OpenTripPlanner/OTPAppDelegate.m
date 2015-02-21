@@ -25,7 +25,7 @@
 {
     #define TESTING 1
     #ifdef TESTING
-        [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+        [TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString ]];
     #endif
     [TestFlight takeOff:@"<YOUR TESTFLIGHT TEAM TOKEN HERE>"];
     
